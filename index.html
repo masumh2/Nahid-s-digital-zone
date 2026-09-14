@@ -1,0 +1,521 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nahid's Digital Zone — Websites That Sell</title>
+<meta name="description" content="Professional website design & development in Bangladesh. Bkash & Cash on Delivery available." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Poppins', 'sans-serif'] },
+        colors: {
+          brandred: '#e2136e',
+          brandorange: '#ff7a18',
+          seagreen: '#2E8B57',
+          seagreenlight: '#3CB371',
+        },
+        backgroundImage: {
+          'brand-gradient': 'linear-gradient(135deg, #e2136e 0%, #ff7a18 100%)',
+          'brand-gradient-soft': 'linear-gradient(135deg, #e2136e22 0%, #ff7a1822 100%)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Poppins', sans-serif; }
+  .gradient-text {
+    background: linear-gradient(135deg, #e2136e, #ff7a18);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hover-lift { transition: all .3s ease; }
+  .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(226,19,110,.2); }
+  .animate-fade { animation: fadeUp .8s ease both; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- ============ HEADER / NAV ============ -->
+<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-4">
+    <a href="#" class="text-xl md:text-2xl font-extrabold">
+      <span class="gradient-text">Nahid's</span>
+      <span class="text-seagreen">Digital Zone</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 font-medium">
+      <a href="#services" class="hover:text-brandred transition">Services</a>
+      <a href="#projects" class="hover:text-brandred transition">Projects</a>
+      <a href="#about" class="hover:text-brandred transition">About</a>
+      <a href="#team" class="hover:text-brandred transition">Team</a>
+      <a href="#payment" class="hover:text-brandred transition">Payment</a>
+      <a href="#contact" class="hover:text-brandred transition">Contact</a>
+      <a href="#payment" class="px-5 py-2 rounded-full text-white bg-brand-gradient shadow-lg hover:opacity-90">Order Now</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden text-3xl text-seagreen">&#9776;</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-5 py-4 space-y-3">
+    <a href="#services" class="block hover:text-brandred">Services</a>
+    <a href="#projects" class="block hover:text-brandred">Projects</a>
+    <a href="#about" class="block hover:text-brandred">About</a>
+    <a href="#team" class="block hover:text-brandred">Team</a>
+    <a href="#payment" class="block hover:text-brandred">Payment</a>
+    <a href="#contact" class="block hover:text-brandred">Contact</a>
+  </div>
+</header>
+
+<!-- ============ 1. HERO ============ -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-brand-gradient-soft overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-96 h-96 bg-brand-gradient rounded-full opacity-20 blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-seagreen rounded-full opacity-10 blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center relative">
+    <div class="animate-fade">
+      <span class="inline-block px-4 py-1 rounded-full bg-white text-seagreen font-semibold text-sm shadow">
+        🚀 Bangladesh's Fastest Growing Web Studio
+      </span>
+      <h1 class="mt-6 text-4xl md:text-6xl font-extrabold leading-tight">
+        We Build <span class="gradient-text">Websites That Sell</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-600">
+        From business sites to e-commerce — get a stunning, mobile-friendly website delivered in days, not months. Pay via <strong>Bkash</strong> or <strong>Cash on Delivery</strong>.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#payment" class="px-8 py-4 rounded-full text-white bg-brand-gradient shadow-xl font-semibold hover:opacity-90">Get Your Website →</a>
+        <a href="#projects" class="px-8 py-4 rounded-full border-2 border-seagreen text-seagreen font-semibold hover:bg-seagreen hover:text-white transition">View Portfolio</a>
+      </div>
+      <div class="mt-8 flex items-center gap-6 text-sm text-gray-600">
+        <div><span class="font-bold text-2xl gradient-text">150+</span><br>Projects</div>
+        <div><span class="font-bold text-2xl gradient-text">98%</span><br>Happy Clients</div>
+        <div><span class="font-bold text-2xl gradient-text">24/7</span><br>Support</div>
+      </div>
+    </div>
+
+    <div class="relative animate-fade">
+      <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800" alt="Web design" class="w-full h-auto">
+      </div>
+      <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 border-l-4 border-seagreen">
+        <p class="text-sm font-semibold text-gray-500">Delivery in</p>
+        <p class="text-2xl font-extrabold gradient-text">3–7 Days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. COMPANY LOGOS ============ -->
+<section class="py-12 bg-white border-y">
+  <div class="max-w-7xl mx-auto px-5 text-center">
+    <p class="text-sm text-gray-500 uppercase tracking-widest mb-6">Trusted by teams & clients across Bangladesh</p>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14 opacity-70">
+      <span class="text-2xl font-bold text-seagreen">Daraz</span>
+      <span class="text-2xl font-bold text-gray-700">Pathao</span>
+      <span class="text-2xl font-bold text-brandred">Bkash</span>
+      <span class="text-2xl font-bold text-gray-700">ShopUp</span>
+      <span class="text-2xl font-bold text-seagreen">Foodpanda</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SERVICES ============ -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold">Our <span class="gradient-text">Services</span></h2>
+      <p class="mt-4 text-gray-600">Every kind of website you need — built to convert.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-brandred">
+        <div class="text-4xl mb-4">💼</div>
+        <h3 class="font-bold text-xl mb-2">Business Websites</h3>
+        <p class="text-gray-600">Professional sites that establish trust & attract customers to your brand.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-seagreen">
+        <div class="text-4xl mb-4">🛒</div>
+        <h3 class="font-bold text-xl mb-2">E-Commerce Stores</h3>
+        <p class="text-gray-600">Full online stores with Bkash, Nagad, and Cash on Delivery integrations.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-brandorange">
+        <div class="text-4xl mb-4">🎨</div>
+        <h3 class="font-bold text-xl mb-2">Portfolio & Landing Pages</h3>
+        <p class="text-gray-600">High-converting landing pages for freelancers, agencies, and startups.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-brandorange">
+        <div class="text-4xl mb-4">📱</div>
+        <h3 class="font-bold text-xl mb-2">Responsive Design</h3>
+        <p class="text-gray-600">Pixel-perfect on mobile, tablet, and desktop — every time.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-brandred">
+        <div class="text-4xl mb-4">⚡</div>
+        <h3 class="font-bold text-xl mb-2">Speed Optimization</h3>
+        <p class="text-gray-600">Blazing-fast websites that rank better on Google and convert more.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift border-t-4 border-seagreen">
+        <div class="text-4xl mb-4">🔧</div>
+        <h3 class="font-bold text-xl mb-2">Maintenance & Support</h3>
+        <p class="text-gray-600">Ongoing updates, backups, and 24/7 technical support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. COMPLETED PROJECTS ============ -->
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold">Completed <span class="gradient-text">Projects</span></h2>
+      <p class="mt-4 text-gray-600">A glimpse of our recent work.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="group relative rounded-3xl overflow-hidden shadow-lg hover-lift">
+        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-white font-bold text-lg">Fashion E-Commerce</h3>
+            <p class="text-white/80 text-sm">React + Tailwind + Bkash</p>
+          </div>
+        </div>
+      </div>
+      <div class="group relative rounded-3xl overflow-hidden shadow-lg hover-lift">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-white font-bold text-lg">Restaurant Website</h3>
+            <p class="text-white/80 text-sm">Booking + Menu System</p>
+          </div>
+        </div>
+      </div>
+      <div class="group relative rounded-3xl overflow-hidden shadow-lg hover-lift">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-white font-bold text-lg">SaaS Landing Page</h3>
+            <p class="text-white/80 text-sm">High-converting design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. ABOUT US ============ -->
+<section id="about" class="py-20 bg-brand-gradient-soft">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" class="rounded-3xl shadow-xl w-full" alt="">
+    <div>
+      <h2 class="text-3xl md:text-5xl font-extrabold">About <span class="gradient-text">Us</span></h2>
+      <p class="mt-5 text-gray-700 leading-relaxed">
+        <strong>Nahid's Digital Zone</strong> is a Bangladesh-based web design studio built on a simple mission: make world-class websites accessible to every business — big or small.
+      </p>
+      <p class="mt-4 text-gray-700 leading-relaxed">
+        We blend clean design, modern tech, and local payment systems (Bkash, Cash on Delivery) so any business can go online without friction.
+      </p>
+      <div class="mt-8 grid grid-cols-3 gap-4">
+        <div class="bg-white rounded-2xl p-4 text-center shadow">
+          <p class="text-2xl font-extrabold gradient-text">150+</p>
+          <p class="text-xs text-gray-500 mt-1">Projects Delivered</p>
+        </div>
+        <div class="bg-white rounded-2xl p-4 text-center shadow">
+          <p class="text-2xl font-extrabold gradient-text">5+</p>
+          <p class="text-xs text-gray-500 mt-1">Years Experience</p>
+        </div>
+        <div class="bg-white rounded-2xl p-4 text-center shadow">
+          <p class="text-2xl font-extrabold gradient-text">98%</p>
+          <p class="text-xs text-gray-500 mt-1">Client Retention</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. TEAM ============ -->
+<section id="team" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold">Meet The <span class="gradient-text">Team</span></h2>
+      <p class="mt-4 text-gray-600">The people behind your website.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center p-8 rounded-3xl shadow hover-lift border border-gray-100">
+        <div class="w-28 h-28 mx-auto rounded-full bg-brand-gradient flex items-center justify-center text-white text-4xl font-bold">N</div>
+        <h3 class="mt-5 font-bold text-xl">Nahid Hasan</h3>
+        <p class="text-seagreen font-medium">Founder & Lead Developer</p>
+        <p class="text-gray-500 text-sm mt-2">Full-stack web developer with 5+ years building conversion-focused websites.</p>
+      </div>
+      <div class="text-center p-8 rounded-3xl shadow hover-lift border border-gray-100">
+        <div class="w-28 h-28 mx-auto rounded-full bg-seagreen flex items-center justify-center text-white text-4xl font-bold">M</div>
+        <h3 class="mt-5 font-bold text-xl">Masum H.</h3>
+        <p class="text-seagreen font-medium">UI/UX Designer</p>
+        <p class="text-gray-500 text-sm mt-2">Crafts beautiful, user-first interfaces that turn visitors into customers.</p>
+      </div>
+      <div class="text-center p-8 rounded-3xl shadow hover-lift border border-gray-100">
+        <div class="w-28 h-28 mx-auto rounded-full bg-brand-gradient flex items-center justify-center text-white text-4xl font-bold">S</div>
+        <h3 class="mt-5 font-bold text-xl">Support Team</h3>
+        <p class="text-seagreen font-medium">24/7 Client Care</p>
+        <p class="text-gray-500 text-sm mt-2">Always available to answer your questions and keep your site running.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. TESTIMONIALS ============ -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold">What Our <span class="gradient-text">Clients Say</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift">
+        <p class="text-yellow-400 text-xl">★★★★★</p>
+        <p class="mt-4 text-gray-700 italic">"My e-commerce site was delivered in 5 days and sales jumped 3x. Bkash payment made everything easy!"</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-brand-gradient flex items-center justify-center text-white font-bold">R</div>
+          <div><p class="font-bold">Rakib Ahmed</p><p class="text-xs text-gray-500">Dhaka</p></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift">
+        <p class="text-yellow-400 text-xl">★★★★★</p>
+        <p class="mt-4 text-gray-700 italic">"Professional, fast, and affordable. My restaurant now gets online orders daily."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-seagreen flex items-center justify-center text-white font-bold">F</div>
+          <div><p class="font-bold">Fatema Begum</p><p class="text-xs text-gray-500">Shariatpur</p></div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover-lift">
+        <p class="text-yellow-400 text-xl">★★★★★</p>
+        <p class="mt-4 text-gray-700 italic">"Cash on Delivery option gave me confidence. Great communication and beautiful design."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-12 h-12 rounded-full bg-brand-gradient flex items-center justify-center text-white font-bold">S</div>
+          <div><p class="font-bold">Sabbir Khan</p><p class="text-xs text-gray-500">Chattogram</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. PAYMENT / ORDER FORM ============ -->
+<section id="payment" class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-5xl font-extrabold">Complete Your <span class="gradient-text">Order</span></h2>
+      <p class="mt-4 text-gray-600">Send money via <strong class="text-brandred">Bkash</strong> to <strong>+880 1404 536327</strong> (Personal), or choose <strong class="text-seagreen">Cash on Delivery</strong>. Then fill this form.</p>
+    </div>
+
+    <form id="orderForm" class="bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-2xl border-t-4 border-brandred space-y-5">
+      <div>
+        <label class="font-semibold text-sm">Full Name *</label>
+        <input required name="name" type="text" placeholder="Your name"
+          class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition">
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div>
+          <label class="font-semibold text-sm">Mobile Number *</label>
+          <input required name="mobile" type="tel" pattern="01[3-9][0-9]{8}" placeholder="01XXXXXXXXX"
+            class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition">
+        </div>
+        <div>
+          <label class="font-semibold text-sm">Email *</label>
+          <input required name="email" type="email" placeholder="you@example.com"
+            class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-5">
+        <div>
+          <label class="font-semibold text-sm">Bkash Last 4 Digits *</label>
+          <input required name="bkash" type="text" maxlength="4" pattern="[0-9]{4}" placeholder="e.g. 6327"
+            class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition">
+        </div>
+        <div>
+          <label class="font-semibold text-sm">Payment Method *</label>
+          <select required name="method"
+            class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-seagreen focus:ring-2 focus:ring-seagreen/30 outline-none transition">
+            <option value="">-- Select --</option>
+            <option value="bkash">Bkash Send Money</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-semibold text-sm">Address *</label>
+        <input required name="address" type="text" placeholder="Your full address"
+          class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition">
+      </div>
+
+      <div>
+        <label class="font-semibold text-sm">Note (optional)</label>
+        <textarea name="note" rows="3" placeholder="Any message..."
+          class="mt-1 w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brandred focus:ring-2 focus:ring-brandred/30 outline-none transition"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full py-4 rounded-xl text-white font-bold text-lg bg-brand-gradient shadow-lg hover:opacity-90 hover:scale-[1.02] transition">
+        Send Order →
+      </button>
+
+      <p id="msg" class="text-center font-semibold text-seagreen hidden"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ 9. CONTACT + MAP ============ -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-5xl font-extrabold">Contact <span class="gradient-text">Us</span></h2>
+      <p class="mt-4 text-gray-600">We'd love to hear from you.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="space-y-5">
+        <div class="bg-white p-6 rounded-2xl shadow flex items-center gap-4 hover-lift">
+          <div class="w-14 h-14 rounded-full bg-brand-gradient flex items-center justify-center text-white text-2xl">📞</div>
+          <div>
+            <p class="text-sm text-gray-500">Phone / WhatsApp</p>
+            <a href="tel:+8801404536327" class="font-bold text-lg hover:text-brandred">+880 1404 536327</a>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow flex items-center gap-4 hover-lift">
+          <div class="w-14 h-14 rounded-full bg-seagreen flex items-center justify-center text-white text-2xl">✉️</div>
+          <div>
+            <p class="text-sm text-gray-500">Email</p>
+            <a href="mailto:nh5338134@gmail.com" class="font-bold text-lg hover:text-brandred break-all">nh5338134@gmail.com</a>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow flex items-center gap-4 hover-lift">
+          <div class="w-14 h-14 rounded-full bg-brand-gradient flex items-center justify-center text-white text-2xl">📍</div>
+          <div>
+            <p class="text-sm text-gray-500">Address</p>
+            <p class="font-bold text-lg">Naria, Shariatpur, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <p class="font-bold mb-3">Follow Us</p>
+          <div class="flex gap-3 flex-wrap">
+            <a href="https://facebook.com/Nahid'sDigitalZone" target="_blank" class="px-4 py-2 rounded-full bg-blue-600 text-white text-sm hover:opacity-90">Facebook</a>
+            <a href="https://wa.me/8801404536327" target="_blank" class="px-4 py-2 rounded-full bg-green-500 text-white text-sm hover:opacity-90">WhatsApp</a>
+            <a href="https://www.instagram.com/hmmasum885" target="_blank" class="px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-orange-400 text-white text-sm hover:opacity-90">Instagram</a>
+            <a href="https://github.com/masumh2" target="_blank" class="px-4 py-2 rounded-full bg-gray-900 text-white text-sm hover:opacity-90">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-2xl min-h-[400px]">
+        <iframe
+          src="https://www.google.com/maps?q=Naria,Shariatpur,Bangladesh&output=embed"
+          class="w-full h-full min-h-[400px] border-0"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-10">
+    <div>
+      <h3 class="text-xl font-extrabold mb-4">
+        <span class="gradient-text">Nahid's</span> <span class="text-seagreenlight">Digital Zone</span>
+      </h3>
+      <p class="text-sm">Designing websites that turn visitors into customers — right from Naria, Shariatpur.</p>
+    </div>
+    <div>
+      <h4 class="font-bold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-brandorange">Services</a></li>
+        <li><a href="#projects" class="hover:text-brandorange">Projects</a></li>
+        <li><a href="#about" class="hover:text-brandorange">About</a></li>
+        <li><a href="#payment" class="hover:text-brandorange">Order</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold text-white mb-4">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li>📞 +880 1404 536327</li>
+        <li>✉️ nh5338134@gmail.com</li>
+        <li>📍 Naria, Shariatpur, BD</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold text-white mb-4">Follow</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://facebook.com/Nahid'sDigitalZone" target="_blank" class="hover:text-brandorange">Facebook</a></li>
+        <li><a href="https://wa.me/8801404536327" target="_blank" class="hover:text-brandorange">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/hmmasum885" target="_blank" class="hover:text-brandorange">Instagram</a></li>
+        <li><a href="https://github.com/masumh2" target="_blank" class="hover:text-brandorange">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
+    © <span id="year"></span> Nahid's Digital Zone. All rights reserved. Made with ❤️ in Bangladesh.
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+<a href="https://wa.me/8801404536327" target="_blank"
+  class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition z-50">
+  💬
+</a>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Header shrink on scroll
+  window.addEventListener('scroll', () => {
+    const h = document.getElementById('header');
+    if (window.scrollY > 30) h.classList.add('py-2','shadow-lg');
+    else h.classList.remove('py-2','shadow-lg');
+  });
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Order Form
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(this));
+    const msg = document.getElementById('msg');
+    msg.classList.remove('hidden');
+    msg.textContent = "✅ Order received! We'll contact you shortly on WhatsApp.";
+    msg.className = "text-center font-semibold text-seagreen";
+
+    // Optional: send to WhatsApp
+    const text = `New Order%0A` +
+      `Name: ${data.name}%0A` +
+      `Mobile: ${data.mobile}%0A` +
+      `Email: ${data.email}%0A` +
+      `Bkash Last4: ${data.bkash}%0A` +
+      `Method: ${data.method}%0A` +
+      `Address: ${data.address}%0A` +
+      `Note: ${data.note || '-'}`;
+    // Uncomment to auto-redirect to WhatsApp:
+    // window.open(`https://wa.me/8801404536327?text=${text}`, '_blank');
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
